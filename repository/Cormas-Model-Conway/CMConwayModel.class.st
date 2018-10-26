@@ -163,7 +163,7 @@ CMConwayModel class >> example3 [
 CMConwayModel class >> example4 [
 	| aModel |
 	aModel := self initialize new initSimulation.
-	(CMSimulationGrid initialize new
+	(CMSimulationGrid new
 		on: aModel
 		withCells: aModel theESE
 		withSituatedEntities: aModel allTheSituatedEntities) runAndVisualize
@@ -175,7 +175,7 @@ CMConwayModel class >> example5 [
 	aModel := self initialize new.
 	aModel activeInit: #initGlidersGun.
 	aModel initSimulation.
-	(CMSimulationGrid initialize new
+	(CMSimulationGrid new
 		on: aModel
 		withCells: aModel theESE
 		withSituatedEntities: aModel allTheSituatedEntities) runAndVisualize
